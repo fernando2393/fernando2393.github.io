@@ -1,0 +1,49 @@
+C:
+  name: C
+  web_url: https://github.com/topics/c
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/c/c.png
+
+CSS:
+  name: CSS
+  web_url: https://github.com/topics/css
+  image_url: https://raw.githubusercontent.com/github/explore/6c6508f34230f0ac0d49e847a326429eefbfc030/topics/css/css.png
+
+HTML:
+  name: HTML
+  web_url: https://github.com/topics/html
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png
+
+Java:
+  name: Java
+  web_url: https://github.com/topics/java
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png
+
+JavaScript:
+  name: JavaScript
+  web_url: https://github.com/topics/javascript
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png
+
+Jupyter Notebook:
+  name: Jupyter Notebook
+  web_url: https://github.com/topics/jupyter-notebook
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/jupyter-notebook/jupyter-notebook.png
+
+Keras:
+  name: Keras
+  web_url: https://github.com/topics/keras
+  image_url: https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Keras_logo.svg/1024px-Keras_logo.svg.png
+
+Python: 
+  name: Python
+  web_url: https://github.com/topics/python
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/python/python.png
+
+SQL:
+  name: SQL
+  web_url: https://github.com/topics/sql
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sql/sql.png
+
+Tensorflow:
+  name: Tensorflow
+  web_url: https://github.com/topics/tensorflow
+  image_url: https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/tensorflow/tensorflow.png

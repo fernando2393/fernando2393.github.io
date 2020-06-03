@@ -38,10 +38,22 @@
           </div>
         {% endunless %}
 
-        {% include projects.html %}
+        {% if site.show_projects == 'true' %}
+          {% include projects.html %}
+        {% endif %}
 
-        {% if site.topics %}
-          {% include interests.html %}
+        {% if site.show_tech == 'true' %}
+          {% include tech.html %}
+        {% endif %}
+
+        {% if site.show_organizations == 'true' %}
+          {% include organizations.html %}
+        {% endif %}
+
+        {% if site.show_topics == 'true' %}
+          {% if site.topics %}
+            {% include interests.html %}
+          {% endif %}
         {% endif %}
 
         {% unless posts_total == 0 %}

@@ -7,7 +7,17 @@
 <img src="{{ user.avatar_url }}" class="circle mb-3" style="max-width: 150px;">
 <h1 class="{% if site.style == 'dark' %}text-white{% endif %} mb-2 lh-condensed">{% if user.name %}{{ user.name }}{% else %}{{ user.login }}{% endif %}</h1>
 <p class="mb-3 f4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">
-  {{ user.bio }}
+  {% if site.is_organization == 'true' %}
+    {{ user.description }}
+  {% endif %}
+  {% if site.is_organization == 'false' %}
+    MSc. Machine Learning student at <a href="https://www.kth.se" class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">KTH</a>.
+    <br>
+    Previously at <a href="https://www.uc3m.es" class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">UC3M</a> & 
+    <a href="https://www.uts.edu.au" class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">UTS</a>.
+    <br>
+    Already finished projects can be found in <i>My Projects</i> and grouped by in <i>Organizations</i>.
+  {% endif %}
 </p>
 
 {% if include.metadata %}
@@ -31,7 +41,11 @@
     {% if user.location %}
       <div class="{{ metadata_styles }} {% if site.style == 'dark' %}text-white{% endif %}">
         {% octicon location height:20 class:"mr-2 v-align-middle" fill:{{ icon_color }} aria-label:Location %}
-        {{ user.location }}
+        <a id='location_banner' href={{ user.location }} class="{% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">{{ user.location }}</a>
+        <script>
+          elem = document.getElementById('location_banner').getAttribute("href")
+          document.getElementById('location_banner').setAttribute("href", "https://google.com/maps/place/" + elem)
+        </script>
       </div>
     {% endif %}
     {% if site.social_media %}
@@ -48,7 +62,9 @@
       </div>
     {% endif %}
     {% if user.hireable %}
-      <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+      {% if site.show_hire == 'true' %}
+        <span title="Hire me" class="d-inline-block f5 rounded-2 text-white bg-green py-1 px-2">Available for hire</span>
+      {% endif %}
     {% endif %}
   </div>
 {% endif %}

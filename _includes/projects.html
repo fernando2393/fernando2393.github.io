@@ -1,6 +1,9 @@
 <h2 {% if site.style == 'dark' %}class="text-white"{% endif %}>My Projects</h2>
-<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories that I've built.</p>
+<p class="f4 mb-4 {% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}">GitHub repositories I am currently focused on. Check out my main projects in the pinned section of my 
+  <a href="https://github.com/fernando2393" class={% if site.style == 'dark' %}text-white{% else %}text-gray{% endif %}>GitHub profile</a> and most of the finished ones in the 
+  <i>Organizations</i> section.</p>
 <div class="d-sm-flex flex-wrap gutter-condensed mb-4">
+
   {% if site.projects.sort_by == 'stars' %}
     {% assign sort_order = 'stargazers_count', 'last' %}
   {% else %}
