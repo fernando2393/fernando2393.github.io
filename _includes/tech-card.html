@@ -1,6 +1,20 @@
 <a href="{{ tech.web_url }}" target="_blank" class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
     {% if tech.image_url %}
-    <img src="{{ tech.image_url }}" style="height: 80px;" class="mx-auto rounded-1 mb-3" alt="{{ tech.name }}">
+    <style>    
+        /* Styles for screens with resolution greater than 1024px */
+        @media (min-width: 768px) {
+          img {
+            max-height: 80px;
+          }
+        }    
+        /* Styles for screens with resolution less than 768px */
+        @media (max-width: 767px) {
+          img {
+            max-height: 54px;
+          }
+        }
+      </style>
+    <img src="{{ tech.image_url }}" class="mx-auto rounded-1 mb-3" alt="{{ tech.name }}">
     {% else %}
     <div
             class="bg-blue-light f4 text-gray-light text-bold rounded-1 flex-shrink-0 text-center mx-auto mb-3"

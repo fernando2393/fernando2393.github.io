@@ -6,7 +6,7 @@
         {% assign show = paper_entry[1] %}
         {% if show == 'true' %}
             {% assign paper = site.data.papers[name] %}
-            <div class="col-6 col-md-12 col-lg-6 col-xl-4 mb-3">
+            <div class="col-sm-6 col-md-12 col-lg-6 col-xl-4 mb-3">
                 {% include paper-card.html %}
             </div>
         {% endif %}

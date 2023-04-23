@@ -2,13 +2,16 @@ Exploring:
   name: Exploring Approaches for Heterogeneous Transfer Learning in Dynamic Networks
   web_url: https://ieeexplore.ieee.org/abstract/document/9789761
   conference: NOMS 2022-2022 IEEE/IFIP Network Operations and Management Symposium
+  conference-url: https://ieeexplore.ieee.org/xpl/conhome/9789703/proceeding
 
 Heterogeneous:
   name: On Heterogeneous Transfer Learning for Improved Network Service Performance Prediction
   web_url: https://ieeexplore.ieee.org/abstract/document/9685059
   conference: 2021 IEEE Global Communications Conference (GLOBECOM)
+  conference-url: https://ieeexplore.ieee.org/xpl/conhome/9685019/proceeding
 
 KTH:
   name: Machine Learning Modeling using Heterogeneous Transfer Learning in the Edge Cloud
   web_url: https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1656488&dswid=-2293
   conference: KTH, School of Electrical Engineering and Computer Science (EECS)
+  conference-url:

@@ -1,8 +1,24 @@
-<a href="{{ tech.web_url }}" target="_blank" class="github-component position-relative hover-grow height-full no-underline d-flex flex-column flex-justify-center text-center border border-gray-light rounded-1 bg-white p-5">
-    <p class="f3 lh-condensed text-center link-gray-dark mb-0 mt-1">{{ paper.name }}</p>
-    {% if paper.conference %}
-    <p style="padding-top: 10px" class="f5 text-gray text-center mb-0 mt-1">
-        {{ paper.conference }}            
-    </p>
-    {% endif %}
-</a>
+<div class="github-component d-flex flex-column flex-justify-between height-full text-left {% if site.style == 'dark' %}box-shadow{% else %}border border-gray-light{% endif %} bg-white rounded-1 p-3">
+    <div>
+      <div class="d-flex flex-justify-between flex-items-start mb-1">
+        <h1 class="f4 lh-condensed mb-1">
+          <a href="{{ paper.web_url }}">
+            {% octicon log height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:log %}
+            {{ paper.name }}
+          </a>
+        </h1>
+      </div>
+    </div>
+    <div class="d-flex f6">
+        {% if paper.conference %}
+        <p style="padding-top: 10px" class="f5 text-gray text-center mb-0 mt-1">
+            {% if paper.conference-url %}
+            <a href="{{ paper.conference-url }}">{{ paper.conference }}</a>
+            {% else %}
+            {{ paper.conference }}
+            {% endif %}
+        </p>
+        {% endif %}
+    </div>
+  </div>
+  
