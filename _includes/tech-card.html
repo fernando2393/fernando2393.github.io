@@ -3,18 +3,18 @@
     <style>    
         /* Styles for screens with resolution greater than 1024px */
         @media (min-width: 768px) {
-          img {
+          #img {
             max-height: 80px;
           }
         }    
         /* Styles for screens with resolution less than 768px */
         @media (max-width: 767px) {
-          img {
+          #img {
             max-height: 54px;
           }
         }
       </style>
-    <img src="{{ tech.image_url }}" class="mx-auto rounded-1 mb-3" alt="{{ tech.name }}">
+    <img src="{{ tech.image_url }}" id="img" class="mx-auto rounded-1 mb-3" alt="{{ tech.name }}">
     {% else %}
     <div
             class="bg-blue-light f4 text-gray-light text-bold rounded-1 flex-shrink-0 text-center mx-auto mb-3"
