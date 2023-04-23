@@ -6,8 +6,9 @@ style: dark
 show_hire: "false" # To Display the Available for hire or not, even if you are not in a company
 show_projects: "true"
 show_tech: "true"
-show_organizations: "true"
-show_topics: "true"
+show_organizations: "false"
+show_papers: "true"
+show_topics: "false"
 is_organization: "false"  # To display the bio or the description
 
 
@@ -69,8 +70,13 @@ organizations:
   UTS: "true"
   FORKS: "false"
 
+papers:
+  Exploring: "true"
+  Heterogeneous: "true"
+  KTH: "true"
+
 technologies:
-  Keras: "true"
+  Databricks: "true"
   Java: "true"
   Jupyter Notebook: "true"
   Python: "true"
