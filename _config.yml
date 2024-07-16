@@ -1,6 +1,5 @@
 repository: fernando2393/fernando2393.github.io
 
-
 layout: sidebar
 style: dark
 show_hire: "false" # To Display the Available for hire or not, even if you are not in a company
@@ -9,76 +8,76 @@ show_tech: "true"
 show_organizations: "false"
 show_papers: "true"
 show_topics: "false"
-is_organization: "false"  # To display the bio or the description
-
+is_organization: "false" # To display the bio or the description
 
 plugins:
-  - jekyll-octicons
-  - jekyll-github-metadata
-  - jemoji
+    - jekyll-octicons
+    - jekyll-github-metadata
+    - jemoji
 
 permalink: /:year/:month/:day/:title/
 
 defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-      type: "posts"
-    values:
-      layout: "post"
+    - scope:
+          path: "" # an empty string here means all files in the project
+          type: "posts"
+      values:
+          layout: "post"
 
 projects:
-  sort_by: stars
-  # sort_by options:
-  #   - pushed
-  #   - stars
-  limit: 7
-  exclude:
-    archived: false
-    forks: false
-    projects:
-      - fernando2393.github.io
+    sort_by: stars
+    # sort_by options:
+    #   - pushed
+    #   - stars
+    limit: 7
+    exclude:
+        archived: false
+        forks: false
+        projects:
+            - fernando2393.github.io
 
 social_media:
-  # behance: your_username
-  # dribbble: your_username
-  # facebook: your_username
-  # hackerrank: your_username
-  # instagram: your_username
-  kaggle: fernando2393
-  # keybase: your_username
-  leetcode: fernando2393
-  linkedin: fernando-garcia-sanz
-  # mastodon: your_username
-  # medium: your_username
-  # stackoverflow: your_user_id
-  # telegram: your_username
-  # twitter: your_username
-  # unsplash: your_username
-  # vk: your_username
-  # website: http://your_website_url
-  # youtube: your_username
+    # behance: your_username
+    # dribbble: your_username
+    # facebook: your_username
+    # hackerrank: your_username
+    # instagram: your_username
+    kaggle: fernando2393
+    # keybase: your_username
+    leetcode: fernando2393
+    linkedin: fernando-garcia-sanz
+    # mastodon: your_username
+    # medium: your_username
+    scholar: eXhNI0IAAAAJ
+    # stackoverflow: your_user_id
+    # telegram: your_username
+    # twitter: your_username
+    # unsplash: your_username
+    # vk: your_username
+    # website: http://your_website_url
+    # youtube: your_username
 
 topics:
-  Deep Learning: "true"
-  Machine Learning: "true"
-  Python: "true"
+    Deep Learning: "true"
+    Machine Learning: "true"
+    Python: "true"
 
 organizations:
-  Fernando: "false"
-  KTH: "true"
-  UC3M: "true"
-  UTS: "true"
-  FORKS: "false"
+    Fernando: "false"
+    KTH: "true"
+    UC3M: "true"
+    UTS: "true"
+    FORKS: "false"
 
 papers:
-  Exploring: "true"
-  Heterogeneous: "true"
-  KTH: "true"
+    Exploring: "true"
+    Heterogeneous: "true"
+    KTH: "true"
 
 technologies:
-  Databricks: "true"
-  Java: "true"
-  Jupyter Notebook: "true"
-  Python: "true"
-  Scala: "true"
-  Tensorflow: "true"
+    Databricks: "true"
+    Java: "true"
+    Jupyter Notebook: "true"
+    Python: "true"
+    Scala: "true"
+    Tensorflow: "true"
