@@ -67,7 +67,7 @@ em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var
 .hello { display: flex; align-items: center; gap: 18px; font: 400 1.05rem var(--mono); margin: 0 0 30px; color: var(--soft); }
 .hello img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; filter: grayscale(1) contrast(1.05); box-shadow: 0 0 0 1px var(--faint), 0 0 0 5px var(--bg), 0 0 0 6px var(--faint); }
 .say { display: inline-flex; align-items: center; }
-.caret { display: inline-block; width: 8px; height: 1.1em; background: var(--accent); margin-left: -6px; animation: blink 1s steps(1) infinite; }
+.caret { display: inline-block; width: 8px; height: 1.1em; background: var(--accent); margin-left: .12em; animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 h1 { font: 400 clamp(3.6rem, 11vw, 9.5rem)/.9 var(--serif); letter-spacing: -.035em; margin: 0 0 32px; }
 .claim { font: 400 clamp(1.5rem, 3.2vw, 2.4rem)/1.2 var(--serif); margin: 0 0 18px; letter-spacing: -.01em; }
@@ -152,10 +152,11 @@ h1 { font: 400 clamp(3.6rem, 11vw, 9.5rem)/.9 var(--serif); letter-spacing: -.03
 @media (max-width: 1100px) {
   /* narrower screens: the route turns vertical */
   .route { display: none; }
-  .path { grid-template-columns: 1fr; padding-left: 26px; position: relative; }
+  /* vertical list reads newest first, so a skim lands on the current role */
+  .path { display: flex; flex-direction: column-reverse; padding-left: 26px; position: relative; }
   .path::before { content: ""; position: absolute; left: 5px; top: 8px; bottom: 8px; width: 1px; background: var(--faint); }
   .path li { padding: 0 0 34px; display: grid; grid-template-columns: auto 1fr; column-gap: 18px; row-gap: 0; align-items: center; }
-  .path li:last-child { padding-bottom: 0; }
+  .path li:first-child { padding-bottom: 0; }
   .path li::before { left: -26px; top: 12px; }
   .city { grid-column: 1; }
   .yr { grid-column: 2; margin: 0; }
